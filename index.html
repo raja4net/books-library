@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <nav class="nav">LIBRARY</nav>
+      </div>
+    </header>
+    <main class="main">
+      <button class="btn">+ Add Book</button>
+    </main>
+
+    <footer class="footer">Copyright &#169;</footer>
+    <div class="modal">
+      <p>Add new book</p>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        maxlength="100"
+        placeholder="Title"
+        required
+      />
+      <input
+        type="text"
+        id="author"
+        name="author"
+        maxlength="100"
+        placeholder="Author"
+      />
+      <input
+        type="number"
+        id="pages"
+        name="pages"
+        max="10000"
+        placeholder="Pages"
+      />
+      <div class="question">
+        <p>Have you read it?</p>
+        <span> <input type="checkbox" class="checkbox" /></span>
+      </div>
+      <button class="btn-submit" type="submit">Submit</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

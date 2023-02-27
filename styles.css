@@ -1,0 +1,133 @@
+:root {
+  --primary-color-navbar: #fffbfb;
+  --primary-font-color: #050505;
+  --primary-color-background: #efefef;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  height: 100px;
+  background-color: var(--primary-color-navbar);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  color: var(--primary-font-color);
+  text-transform: uppercase;
+
+  align-items: center;
+  font-size: 2.5rem;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  margin: 20px;
+  height: 30rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-font-color);
+  font-size: 1.4rem;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
+
+  height: 3rem;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+  background: black;
+  color: white;
+}
+
+.btn-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
+
+  background-color: rgb(163, 218, 37);
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-submit:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
+.footer {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  color: var(--primary-font-color);
+  font-size: 1rem;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  height: 20rem;
+  background-color: #f0eef1;
+  box-shadow: 0 0 2 black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  opacity: 0;
+  padding: 20px;
+}
+.question {
+  display: flex;
+  align-items: center;
+}
+p {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+input.checkbox {
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 5px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
