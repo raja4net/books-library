@@ -13,41 +13,59 @@
         <nav class="nav">LIBRARY</nav>
       </div>
     </header>
-    <main class="main">
+    <main class="main container">
       <button class="btn">+ Add Book</button>
+      <div class="books-grid" id="booksGrid">
+        <div class="book-card">
+          <p>Title: Life of pie</p>
+          <p>Author: Raja</p>
+          <p>40 Pages</p>
+
+          <div class="button-group">
+            <button class="btn-not-read">Read</button>
+            <button class="btn-remove">Remove</button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">Copyright &#169;</footer>
+
     <div class="modal">
-      <p>Add new book</p>
-      <input
-        type="text"
-        id="title"
-        name="title"
-        maxlength="100"
-        placeholder="Title"
-        required
-      />
-      <input
-        type="text"
-        id="author"
-        name="author"
-        maxlength="100"
-        placeholder="Author"
-      />
-      <input
-        type="number"
-        id="pages"
-        name="pages"
-        max="10000"
-        placeholder="Pages"
-      />
-      <div class="question">
-        <p>Have you read it?</p>
-        <span> <input type="checkbox" class="checkbox" /></span>
+      <div class="modal-content">
+        <form action="#" class="add-book-form">
+          <div class="p1">Add new book</div>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            maxlength="100"
+            placeholder="Title"
+            required
+          />
+          <input
+            type="text"
+            id="author"
+            name="author"
+            maxlength="100"
+            placeholder="Author"
+          />
+          <input
+            type="number"
+            id="pages"
+            name="pages"
+            max="10000"
+            placeholder="Pages"
+          />
+          <div class="question">
+            <div class="p1">Have you read it?</div>
+            <span> <input type="checkbox" class="checkbox" /></span>
+          </div>
+          <button class="btn-submit" type="submit">Submit</button>
+        </form>
       </div>
-      <button class="btn-submit" type="submit">Submit</button>
     </div>
+    <div class="overlay" id="overlay"></div>
     <script src="index.js"></script>
   </body>
 </html>
