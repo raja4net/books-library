@@ -118,7 +118,7 @@ body {
 }
 
 .btn-not-read:hover {
-  filter: brightness(90%);
+  background-color: rgb(244, 92, 92);
 }
 
 .btn-read {
@@ -130,7 +130,7 @@ body {
 }
 
 .btn-read:hover {
-  filter: brightness(90%);
+  background-color: rgb(20, 69, 20);
 }
 
 .btn-remove {
